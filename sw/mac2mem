@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+
+while(<>){
+   if(/([0-9A-F]+):([0-9A-F]+)\s*(.*)/){
+	print "mem[12'h$1] = 16'h$2;\t\/\/\t$3\n";
+   } elsif(/\s+(\w+:)/){
+	print "\t\t\t\t\/\/$1\n";
+   }
+}
