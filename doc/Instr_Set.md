@@ -1,10 +1,10 @@
 TINY CPU instruction set
 ========================
 
-Note: this is google translation version, I am lazy now.
+Note: this is google translation version, I am lazy now. I reformat it to Markdown with the help of https://dillinger.io (peace :v)
 
-|No.| Instruction  | 15    | 14   |  13 |    12    | 11   |  10   |  9    |  8    |  7   |   6  |    5   |   4    |  3   |   2     | 1  |Hex   |  Behavior
-|---|----------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------
+|No.| Instruction    | 15    | 14   |  13 |    12    | 11   |  10   |  9    |  8    |  7   |   6  |    5   |   4    |  3   |   2     | 1     |Hex   |  Behavior
+|---|----------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------| --------
 |1  | HALT           | 0     | 0     | 0    |  0  |    -     | -    |  -    |  -    |  -    |  -   |   -  |    -   |   -    |  -   |   -     | 0000 |  Stop
 |2  | PUSHI I        | 0     | 0     | 0    |  1  |    I     | I    |  I    |  I    |  I    |  I   |   I  |    I   |   I    |  I   |   I     | 1000+I    |   Push the immediate value I onto the stack
 |3  | PUSH A         | 0     | 0     | 1    |  0  |    A     | A    |  A    |  A    |  A    |  A   |   A  |    A   |   A    |  A   |   A     | 2000+A    |   Push the value of address A to the stack
