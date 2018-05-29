@@ -16,3 +16,10 @@ $ bison -d -y tinyc.y
 $ flex tinyc.l
 $ gcc -o tinyc lex.yy.c y.tab.c
 ```
+
+compile C program
+```
+$ tinyc < test.c > test.asm
+$ ./tinyasm < test.asm | ./mac2mem
+```
+Then, we insert the output to ram.v
